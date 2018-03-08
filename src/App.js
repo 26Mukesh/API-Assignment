@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {connect} from 'react-redux';
 import Apicall from './Apicall';
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
         <div className="row">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React application</h1>
+            <h1 className="App-title">Welcome to React</h1>
           </header>
           <Apicall />
         </div>
@@ -19,4 +20,6 @@ class App extends Component {
   }
 }
 
-export default App;
+//connect react-redux
+export default connect()(App);
+
